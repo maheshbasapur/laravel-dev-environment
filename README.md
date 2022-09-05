@@ -13,3 +13,6 @@
 - Run migrations: docker-compose exec app php artisan migrate
 
 Check registering new user and login
+
+# References:
+- https://www.linkedin.com/pulse/how-create-laravel-development-environment-using-docker-isaac-souza/
