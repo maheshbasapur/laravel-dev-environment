@@ -11,6 +11,8 @@
 - Add Breeze dependancy for authentication: docker-compose exec app composer require laravel/breeze --dev
 - Install breeze: docker-compose exec app php artisan breeze:install
 - Run migrations: docker-compose exec app php artisan migrate
+- Update /config/laratrust_seeder.php with right mapping of roles to permissions
+- Run seeder to create permissions: php artisan db:seed
 
 Check registering new user and login
 
