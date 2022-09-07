@@ -13,6 +13,21 @@
 - Run migrations: docker-compose exec app php artisan migrate
 - Update /config/laratrust_seeder.php with right mapping of roles to permissions
 - Run seeder to create permissions: php artisan db:seed
+- Install Bootstrap with popperjs (optional) for UI
+-- Run commands
+--- npm install bootstrap
+--- npm i @popperjs/core
+--- npm install sass
+--- npm install sass-loader
+-- Create new file "resources/sass/app.scss" if not exist and add following
+--- @import '~bootstrap';
+-- To webpack.mix.js, add
+--- mix.sass('resources/sass/app.scss', 'public/css')
+-- Run command to compile
+--- npm run dev
+-- Add following to blade template files that need bootstrap
+--- <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 
 Check registering new user and login
 
